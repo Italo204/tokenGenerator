@@ -18,8 +18,8 @@ router.post('/generateToken', async (req, res) => {
 });
 
 router.post('/verifyToken', async (req, res) => {
-    const token = req.body.Authorization;
-    const refreshToken = req.body.Refresh;
+    const token = req.headers.Authorization as string;
+    const refreshToken = req.headers.RefreshToken as string;
     if(!token || token === ""){
         res.status(400).send("Token is required");
         return;
@@ -38,7 +38,7 @@ router.post('/verifyToken', async (req, res) => {
                 response.expiration = verified.expiration.expiresIn;
             }
 
-            res.status(200).send(response)
+            res.status(200).send(response);
         }
     } catch (error) {
         res.status(500).send(`An error occured ${error}`);

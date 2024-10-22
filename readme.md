@@ -2,9 +2,6 @@
 
 Esse projeto foi desenvolvido em **TypeScript**, utilizando **Node.js**, **Express** e **Docker**. Ele foi um teste e uma revisão para mim, sendo a primeira vez que eu mexo com autenticação. Apesar de ser um pouco difícil, está completo. Este projeto foi feito para gerar tokens, com a intenção inicial de utilizá-lo juntamente com outro projeto de uma clínica médica que ainda está em desenvolvimento.
 
-## **IMPORTANTE:**
-Uma coisa que devo ressaltar é que nos métodos de criação e verificação, em vez de pegar as informações do header, eu coloquei para serem pegas do body. Isso foi feito por causa de que eu ainda não sei enviar requisições para outras APIs utilizando esse header.
-
 <br />
 
 ## Funcionalidades

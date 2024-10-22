@@ -1,6 +1,5 @@
 import dotenv from 'dotenv'
 import jwt, { JwtPayload } from 'jsonwebtoken'
-import { pathToFileURL } from 'url';
 
 dotenv.config();
 
